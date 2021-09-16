@@ -1,0 +1,329 @@
+body{
+    background-color: #7395AE;
+    background-image: url("https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+
+}
+.custom-nav{
+    position:fixed;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: #557A95;
+    font-size:1.5rem;
+    
+    
+}
+#welcome_div{
+    position: fixed;
+    width: 100%;
+    top:10%;
+    height: 100px;
+    background-color: #667986ab;
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+
+#right_div{
+    position: fixed;
+    border-left: solid 1px rgb(0, 0, 0);
+    height:100px;
+    width:100%;
+    top:90%;
+    border-top:1px solid rgb(0,0,0);
+    background-color: #557A95;
+
+}
+.menu{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+#harvard_logo{
+    position:relative;
+    left: 20%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    max-width:15vw;
+    
+}
+#edx_logo{
+    position:relative;
+    left: 50%;
+    top:35%;
+    transform: translate(-50%,-50%);
+    max-width:20vw;
+    
+}
+#by{
+    position:relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:rgb(255, 255, 255);
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+#header{
+    display: none;
+    position:fixed;
+    left:50%;
+    top:10%;
+    transform: translate(-50%);
+    height:200px;
+    width: 100%;
+    padding-top:25px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: #667986c4;
+    flex-direction: row;
+}
+.header_title{
+    position: relative;
+    top: -20px;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+}
+.header_expenses{
+    font-size:0.8rem;
+    position:relative;
+    text-align: center;
+    color: white;
+    line-height: 2;
+
+}
+mark{
+    background-color: black;
+    color:white;
+    border-radius: 15px;
+}
+
+#login_div{
+    position: fixed; 
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    max-width:17vw;
+}
+#register_div{
+    position: fixed; 
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    max-width:17vw; 
+}
+
+#budget_div{
+    position: fixed;
+    width: 500px;
+    height:400px;
+    left: 50%;
+    top: 50%;
+    max-width: 100vw;
+    transform: translate(-50%, -50%);
+    
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    animation: fadein;
+    animation-duration:3s;
+}
+#budget_div:hover{
+    box-shadow: rgba(54, 186, 238, 0.568) 0px 22px 70px 4px;
+}
+@keyframes fadein {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+    
+}
+#label{
+    position: relative;
+    left: -175px;
+    top:45px;
+    color: white;
+    font-size: 1rem;
+}
+#create_budget{
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    height:auto;
+    width: 400px;
+    border-radius: 30px; 
+    text-align: center;
+}
+
+#budget_dropdown{
+    position:relative;
+    top: 10px;
+    left:50%;
+    transform: translate(-50%);
+    width:200px;
+    border: solid white 1px;
+}
+#new_budget_button{
+    position: relative;
+    top: -28px;
+    left:40%;
+    transform: translate(-50%);
+    
+}
+#new_budget_continue{
+    position:fixed;
+    left: 50%;
+    top: 90px;
+    transform: translate(-50%);
+}
+#budget_form_div{
+    display: flex;
+    position: relative;
+    left:50%;
+    top:90px;
+    transform: translate(-50%);
+    display: none;
+    width:200px;
+    border-radius: 30px;
+
+}
+#categories_div{
+    display: none;
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height:70%;
+    left: 50%;
+    top:31.5%;
+    transform: translate(-50%);
+    background-color: #7395ae41;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-height: 545px;
+    min-height: 520px;
+    max-width: 1500px;
+    z-index:  1;
+}
+#categories_div::-webkit-scrollbar{
+    display: none;
+}
+
+.categories{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    border:3px rgb(172, 149, 149) solid;
+    border-radius: 30px;
+    z-index: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: myanimation;
+    animation-duration:3s;
+    box-shadow: rgba(0, 0, 0, 0.35) -20px 20px 10px;
+}
+.categories:hover{
+    box-shadow: rgba(54, 186, 238, 0.568) 0px 22px 70px 10px;
+}
+@keyframes myanimation {
+    0%{
+        opacity: 0;
+        height:400px;
+        width: 450px;
+    }
+    100%{
+        opacity: 1;
+        height:300px;
+        width: 400px;
+    }
+}
+.categories_title{
+    position: relative;
+    text-align: center;
+    color:white;
+ 
+}
+#categories_div_budget_name{
+    position: absolute;
+    top:20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+
+}
+.new_category_input{
+    position: relative;
+    width: 100px;
+    border:1px;
+    border-radius: 5px;
+    left:50%;
+    transform: translate(-50%);
+}
+.new_category_button{
+    position: relative;
+    left:40%;
+}
+.entries_table td{
+    padding: 5px;
+    padding-left:20px;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+
+.categories_table{
+    position: relative;
+    left:20px;
+    height: 170px;
+    width: 350px;
+    overflow: auto;
+    color: white;
+}
+.categories_table::-webkit-scrollbar{
+    display: none;
+}
+.delete_entry_button{
+    position: relative;
+    top:-5px;
+    text-align: top;
+    color:black;
+    background-color:red;
+    height:5px;
+    border-radius: 5px;
+    border:1px white solid;
+}
+.subtotal{
+    position:relative;
+    top:0px;
+    left:65%;
+    color:white;
+}
+#entry_date{
+    position: absolute;
+    left:35%;
+    width: auto;
+}
+
+#budget_delete_button{
+    position: relative;
+    top:-20px;
+    left:40%;
+    height: 40px;
+    text-align: center;
+}
+
